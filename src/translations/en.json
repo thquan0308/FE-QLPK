@@ -53,7 +53,8 @@
         "position": "Position",
         "role": "Role",
         "image": "Image",
-        "save": "Save"
+        "save": "Save",
+        "click-img": "Click on photo for full view"
 
     }
 }

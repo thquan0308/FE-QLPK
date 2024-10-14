@@ -52,7 +52,8 @@
         "position": "Chức danh",
         "role": "Vai trò",
         "image": "Ảnh đại diện",
-        "save": "Lưu"
+        "save": "Lưu",
+        "click-img": "Nhấp vào ảnh để xem đầy đủ"
 
     }
 }
