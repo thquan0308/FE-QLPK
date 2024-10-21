@@ -54,7 +54,9 @@
         "role": "Role",
         "image": "Image",
         "save": "Save",
-        "click-img": "Click on photo for full view"
+        "click-img": "Click on photo for full view",
+
+        "edit": "Edit user"
 
     }
 }
