@@ -1,17 +1,18 @@
 import actionTypes from '../actions/actionTypes';
 
-const initContentOfConfirmModal = {
-    isOpen: false,
-    messageId: "",
-    handleFunc: null,
-    dataFunc: null
-}
+// const initContentOfConfirmModal = {
+//     isOpen: false,
+//     messageId: "",
+//     handleFunc: null,
+//     dataFunc: null
+// }
 
 const initialState = {
     isLoadingGender: false,
     genders: [],
     roles: [],
     positions: [],
+    users: [],
 }
 
 const adminReducer = (state = initialState, action) => {
@@ -60,6 +61,18 @@ const adminReducer = (state = initialState, action) => {
 
         case actionTypes.FETCH_ROLE_FAILED:
             state.roles = []
+            return {
+                ...state,
+            }
+
+        case actionTypes.FETCH_ALL_USERS_SUCCESS:
+            state.users = action.users
+            return {
+                ...state,
+            }
+
+        case actionTypes.FETCH_ALL_USERS_FAILED:
+            state.users = []
             return {
                 ...state,
             }
