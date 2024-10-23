@@ -29,14 +29,18 @@ class OutStandingDoctor extends Component {
         // console.log('check topDoctorsRedux: ', this.props.topDoctorsRedux)
         let arrDoctors = this.state.arrDoctors
         let { language } = this.props
-        arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors)
-        console.log('check topDoctorsRedux: ', arrDoctors)
+        // arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors)
+        // console.log('check topDoctorsRedux: ', arrDoctors)
         return (
             <div className='section-share section-outstanding-doctor'>
                 <div className='section-container'>
                     <div className='section-header'>
-                        <span className='title-section'>Bác sĩ nổi bật tuần qua</span>
-                        <button className='btn-section'>Xem thêm</button>
+                        <span className='title-section'>
+                            <FormattedMessage id="homepage.outstanding-doctor" />
+                        </span>
+                        <button className='btn-section'>
+                            <FormattedMessage id="homepage.more-infor" />
+                        </button>
                     </div>
                     <div className='section-body'>
                         <Slider {...this.props.settings}>
@@ -48,8 +52,8 @@ class OutStandingDoctor extends Component {
                                         imageBase64 = new Buffer(item.image, 'base64').toString('binary')
                                     }
 
-                                    let nameVi = `${item.positionData.valueVi},${item.lastName} ${item.firstName}`
-                                    let nameEn = `${item.positionData.valueEn},${item.firstName} ${item.lastName}`
+                                    let nameVi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName}`
+                                    let nameEn = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}`
 
                                     return (
                                         <div className='section-customize' key={index}>

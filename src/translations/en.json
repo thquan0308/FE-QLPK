@@ -57,6 +57,9 @@
         "click-img": "Click on photo for full view",
 
         "edit": "Edit user"
-
+    },
+    "homepage":{
+        "outstanding-doctor": "Outstanding doctor of the week",
+        "more-infor": "More infor"
     }
-}
+}   
