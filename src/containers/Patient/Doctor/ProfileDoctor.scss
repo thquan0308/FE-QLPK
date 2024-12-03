@@ -1,0 +1,36 @@
+.profile-doctor-container {
+    .intro-doctor {
+        display: flex;
+
+        // height : 100px;
+        // border    : 1px solid grey;
+
+        .content-left {
+            // border       : 1px solid green;
+            // background   : center center no-repeat;
+            background-size    : cover;
+            background-repeat  : no-repeat;
+            background-position: center;
+            width              : 80px;
+            height             : 80px;
+            border-radius      : 50%;
+        }
+
+        .content-right {
+            width            : calc(100% - 80px);
+            // border        : 1px solid grey;
+            display          : flex;
+            flex-direction   : column;
+            padding-left     : 10px; //cách bên trái ảnh
+
+            .up {
+                font-weight: 600;
+            }
+
+            .down {
+                text-align    : justify;
+                // padding-top: 10px; // cách trên
+            }
+        }
+    }
+}

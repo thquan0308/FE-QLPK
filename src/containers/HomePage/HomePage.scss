@@ -1,0 +1,212 @@
+//reset slick slider css
+.slick-prev {
+    // position: relative !important;
+    left      : -10px !important;
+    z-index   : 1000 !important;
+    height    : 48px !important;
+    width     : 44px !important;
+    background: #fff !important;
+    border    : 2px solid #d7d7d7 !important;
+
+    &:hover {
+        background: #eceaea !important;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: "FontAwesome" !important;
+    color      : black !important;
+    // content: "\f060" !important;
+}
+
+.slick-next {
+    right     : -10px !important;
+    z-index   : 1000 !important;
+    height    : 48px !important;
+    width     : 44px !important;
+    background: #fff !important;
+    border    : 2px solid #d7d7d7 !important;
+
+    &:hover {
+        background: #eceaea !important;
+    }
+}
+
+.slick-disabled {
+    display: none !important;
+}
+
+.section-share {
+    &.section-specialty {
+        //chuyên khoa phổ biến
+        background   : #f5f5f5;
+        // border    : 1px solid rgb(199, 241, 11);
+    }
+
+    &.section-outstanding-doctor {
+        //bác sĩ nổi bật
+        background   : #f5f5f5;
+        // border    : 1px solid rgb(0, 218, 0);
+    }
+
+    &.section-about {
+        // border       : 1px solid red;
+        //kích thước chiều cao about
+        height       : 550px !important;
+        border-top   : 1px solid #f5f5f5;
+        border-bottom: 1px solid #f5f5f5;
+
+    }
+
+    .section-body {
+        //khung 4 ảnh + text cẩm nang
+        // border: 1px solid rgb(0, 0, 0);
+
+        .section-customize {
+            // border: 1px solid rgb(255, 3, 234);
+
+            .bg-image {
+                //Chỉnh sửa ảnh section
+                width              : 350px;
+                height             : 200px;
+                //blue
+                background-position: center center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+                background-color   : #eee;
+
+                &.section-specialty {
+                    // background-image   : url('../../assets/specialty/co-xuong-khop.png');
+                    // border          : 1px solid blue;
+
+                }
+
+                &.section-medical-facility {
+                    background-image   : url('../../assets/medical-facility/benh-vien-thu-cuc.jpg');
+                    // border          : 1px solid blue;
+
+                }
+
+                &.section-outstanding-doctor {
+                    //kích thước ảnh bác sĩ
+                    // background-image   : url('../../assets/outstanding-doctor/anh-dai-dien-bs.jpg');
+                    // border          : 1px solid blue;
+                    width        : 140px;
+                    height       : 140px;
+                    border-radius: 50%;
+                }
+
+                &.section-handbook {
+                    background-image   : url('../../assets/handbook/handbook.jpg');
+                    // border          : 1px solid blue;
+
+                }
+            }
+        }
+    }
+
+}
+
+.section-share {
+    height: 380px; //Chiều cao specialty
+
+    .section-container {
+        //cách lề trái
+        margin        : 0 150px; //độ rộng (chiều ngang căn giữa) 
+        display       : flex;
+        flex-direction: column;
+
+        .section-header {
+            //cách dòng trên của ảnh
+            height          : 60px;
+            // border       : 1px solid green;
+            margin-bottom   : 30px;
+            padding-top     : 30px;
+
+            .title-section {
+                font-size  : 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float         : right;
+                padding       : 10px 15px;
+                border        : none;
+                outline       : none;
+                display       : block;
+                background    : #ebebeb;
+                color         : black;
+                cursor        : pointer;
+                text-transform: uppercase;
+
+                &:hover {
+                    color     : #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+
+
+    }
+}
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display        : flex;
+        justify-content: center;
+        margin-bottom  : 10px;
+    }
+
+    .section-customize {
+        padding: 10px;
+        cursor : pointer;
+
+        //kích thước khung của bác sĩ
+        .customize-border {
+            border : 1px solid blue;
+            padding: 30px;
+        }
+    }
+}
+
+.home-footer {
+    text-align : center;
+    padding-top: 8px;
+
+    a {
+        text-decoration: unset;
+    }
+}
+
+.section-about {
+    //cách lề trái
+    padding: 0 150px;
+
+    .section-about-header {
+        padding    : 20px 10px;
+        font-size  : 22px;
+        font-weight: 600px;
+    }
+
+    .section-about-content {
+        display: flex;
+        gap    : 15px;
+        width  : 100%;
+
+        .content-left {
+            width: 55%;
+        }
+
+        .content-right {
+            margin-left: 5%; //cách bên trái video
+            width      : 40%;
+
+            p {
+                text-align: justify;
+                font-style: italic;
+                padding   : 15px;
+            }
+        }
+    }
+}
